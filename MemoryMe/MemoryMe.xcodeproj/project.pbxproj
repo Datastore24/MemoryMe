@@ -14,6 +14,7 @@
 		ADB71AB91B9055CA00DE250D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB71AB81B9055CA00DE250D /* Images.xcassets */; };
 		ADB71ABC1B9055CA00DE250D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB71ABA1B9055CA00DE250D /* LaunchScreen.xib */; };
 		ADB71AC81B9055CA00DE250D /* MemoryMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB71AC71B9055CA00DE250D /* MemoryMeTests.m */; };
+		ADB71AD31B905BD100DE250D /* RemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB71AD21B905BD100DE250D /* RemindViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,10 @@
 		ADB71AC11B9055CA00DE250D /* MemoryMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB71AC61B9055CA00DE250D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADB71AC71B9055CA00DE250D /* MemoryMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryMeTests.m; sourceTree = "<group>"; };
+		ADB71AD11B905BD100DE250D /* RemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindViewController.h; sourceTree = "<group>"; };
+		ADB71AD21B905BD100DE250D /* RemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindViewController.m; sourceTree = "<group>"; };
+		ADB71AD41B95F05900DE250D /* ConstantHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantHeader.h; sourceTree = "<group>"; };
+		ADB71AD51B95F17300DE250D /* AllNeedPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllNeedPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +86,14 @@
 		ADB71AAA1B9055CA00DE250D /* MemoryMe */ = {
 			isa = PBXGroup;
 			children = (
+				ADB71AD51B95F17300DE250D /* AllNeedPrefixHeader.pch */,
+				ADB71AD41B95F05900DE250D /* ConstantHeader.h */,
 				ADB71AAF1B9055CA00DE250D /* AppDelegate.h */,
 				ADB71AB01B9055CA00DE250D /* AppDelegate.m */,
 				ADB71AB21B9055CA00DE250D /* ViewController.h */,
 				ADB71AB31B9055CA00DE250D /* ViewController.m */,
+				ADB71AD11B905BD100DE250D /* RemindViewController.h */,
+				ADB71AD21B905BD100DE250D /* RemindViewController.m */,
 				ADB71AB51B9055CA00DE250D /* Main.storyboard */,
 				ADB71AB81B9055CA00DE250D /* Images.xcassets */,
 				ADB71ABA1B9055CA00DE250D /* LaunchScreen.xib */,
@@ -222,6 +231,7 @@
 				ADB71AB41B9055CA00DE250D /* ViewController.m in Sources */,
 				ADB71AB11B9055CA00DE250D /* AppDelegate.m in Sources */,
 				ADB71AAE1B9055CA00DE250D /* main.m in Sources */,
+				ADB71AD31B905BD100DE250D /* RemindViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +298,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/oxyfire/Desktop/GitHub/MemoryMe/MemoryMe/MemoryMe/AllNeedPrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -330,6 +342,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/oxyfire/Desktop/GitHub/MemoryMe/MemoryMe/MemoryMe/AllNeedPrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -347,6 +361,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/oxyfire/Desktop/GitHub/MemoryMe/MemoryMe/MemoryMe/AllNeedPrefixHeader.pch;
 				INFOPLIST_FILE = MemoryMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +373,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/oxyfire/Desktop/GitHub/MemoryMe/MemoryMe/MemoryMe/AllNeedPrefixHeader.pch;
 				INFOPLIST_FILE = MemoryMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

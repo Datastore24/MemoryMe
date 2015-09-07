@@ -9,5 +9,7 @@
 #ifndef MemoryMe_ConstantHeader_h
 #define MemoryMe_ConstantHeader_h
 
+#define NOTIFICATION_WHEN_CREATE_NEW_EVENTS @"NOTIFICATION_WHEN_CREATE_NEW_EVENTS"
+
 
 #endif
