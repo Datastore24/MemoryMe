@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>29FC1D68-FD44-42E3-81DF-5CCC28966037</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>MemoryMe</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>259DF887F37E8B9E3F35E0BAEEE2FF274CE12642</key>
 		<string>https://github.com/Datastore24/MemoryMe.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MemoryMe/MemoryMe.xcodeproj/project.xcworkspace</string>
+	<string>MemoryMe/MemoryMe.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>259DF887F37E8B9E3F35E0BAEEE2FF274CE12642</key>
